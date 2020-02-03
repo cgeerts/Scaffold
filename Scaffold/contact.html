@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title><h1 class="hidden">Contact</h1></title>
+<link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
+</head>
+<body>
+	<section id="topBar"></section><!--end topBar-->
+	<div id="siteContainer">
+    	<header id="mainHeader">
+        	<div id="logo"><a href="index.html"><img src="images/Logo.png" alt="Logo"></a>
+            </div><!--end logo-->
+            <nav id="mainNav">
+                <button><a href="index.html">Home</a></button> •
+                <button><a href="contact.html">Contact</a></button>
+            </nav><!--end mainNav-->
+        </header><!--end mainHeader-->
+        <section id="promo2">
+        	<div id="promoImageBig"></div>
+            <div id="promoImageBig"></div><!--end promoImage-->
+        </section><!--end promo-->
+        	<section><h2>Contact Me</h2>
+    <p>Thanks for visiting. Here is a contact form strictly for business.</p>
+    <br><br>
+    <h3 class="hidden">Contact Form</h3><!--start form-->
+    <form autocomplete="off" form action="email.php" method="post">
+            <label>How would you rate this attraction?</label>
+            <input type="text" list="dataList" placeholder="rating">
+            <datalist id="dataList">
+                <option>Incredible</option>
+                <option>Amazing</option>
+                <option>Excellent</option>
+                <option>Perfect</option>
+            </datalist>
+            <br><br>
+            <label>Email:</label>
+            <input type="email">
+            <br><br>
+            <label>Your Name:</label>
+            <input type="text" placeholder="First & Last name" required>
+            <br><br>
+            <label>Message:</label>
+            <br>
+            <textarea></textarea>
+            <br><br>
+            <label>Password:</label>
+            <input type="password">
+            <br><br>
+            <label>Telephone Number:</label>
+            <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            <br><br>
+            <button type="submit" value="Submit">Submit</button>
+            <button type="reset">Reset</button>
+    </form></section><!--end form-->
+            
+        </section><!--end productInfo-->
+        <footer id="mainFooter">
+            <div id="footerNav"><p>
+                <a href="index.html">Home</a> •
+                <a href="contact.html">Contact</a>
+            </div><!--end FooterNav-->
+            <div id="copyRight"><p>Carter Geerts, 2020</p></div><!--end Copyright-->
+        </footer><!--end mainFooter-->
+    </div><!--end siteContainer-->
+<script src="js/main.js"></script>    
+</body>
+</html>

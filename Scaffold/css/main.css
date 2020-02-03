@@ -1,0 +1,284 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*basic reset*/
+
+div,p,body,header,footer,section,article,nav 
+{ 
+	margin: 0; 
+	padding: 0; 
+}	
+
+img 
+{ 
+	border: none;
+	margin: 0; 
+	padding: 0;
+}
+
+/*html selectors*/
+
+body 
+{
+	font-family: "Century Gothic", Century Gothic, Century Gothic, sans-serif;
+	font-size: 24px;
+	color: #333;
+	background: #EF886E;
+}
+
+nav
+{
+	font-family: "Century Gothic", Century Gothic, sans-serif;
+	font-size: 12px;
+	color: #450909;
+}
+
+button {
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  color: #A22121;
+  border-color: #A22121;
+  font-family: "Century Gothic", Century Gothic, sans-serif;
+  font-weight: bold;
+  background-color: #E7695E;
+  font-size: 20px;
+}
+
+
+
+/*a:link is for not visited(standard unclicked link), 
+a:visited is for visited, and just a applies to both.*/
+/*a will also style anchor links*/
+
+a:link, a:visited 
+{ 
+ 	text-decoration: none; 	
+}
+
+a:hover, a:active 
+{ 
+	text-decoration: overline; 
+}
+
+/*hide elements from browser but show for doc outline*/
+
+.hidden
+{
+	display: none;
+}
+
+/*section is block level and no width specidied therefore stretches full screen*/
+#topBar
+{
+	background-color: #EB3F3F;
+	height: 20px;
+}
+
+
+/*Site Container*/
+/*This is essentially a box that we place the whole site in.  
+We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 20px (960px) so it fits on 1024x768 screens.*/
+
+#siteContainer 
+{
+	margin: 0 auto;
+	width: 1250px;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+/*This is a flex container*/
+#mainHeader
+{
+	margin-top: 20px;
+	padding-bottom: 20px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+	border-bottom: solid 1px #DDD;
+}
+
+/*This is a flex item*/
+#logo
+{
+	width: 200px;
+}
+
+/*This is also a flex item*/
+/*We use margin left auto to send it all the way to the right*/
+#mainNav 
+{
+	padding-top: 200px;
+	padding-right: 50px;
+	font-size: 30px;
+	margin-left: auto;
+	width: 650px;
+
+}
+
+#submit {
+
+  display: block;
+  width: 130px;
+  height: 45px;
+  text-align: center;
+  color: #A22121;
+  border-color: #A22121;
+  font-family: "Century Gothic", Century Gothic, sans-serif;
+  font-weight: bold;
+  background-color: #E7695E;
+  font-size: 20px;
+}
+
+#promo 
+{
+	margin-top: 40px;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+
+#promo2
+{
+	margin-top: 40px;
+	border-bottom: solid 1px #DDD;
+	padding-left: 64px;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+
+#promoText 
+{
+	width: 600px;
+}
+
+#promoImage 
+{
+	border-style: solid;
+	border-top-width: 7px;
+	border-left-width: 7px;
+	border-right-width: 7px;
+	border-bottom-width: 7px;
+	border-color: #7C0C0C;
+	margin-left: auto;
+	width: 519px;
+	height: 345px;
+}
+
+#productInfo 
+{
+	margin-top: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: space-between;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 20px;
+}
+
+.productDesc 
+{
+	width: 700px;
+	height: 160px;
+	padding-top: 30px;
+}
+
+#mainFooter 
+{
+	font-size: 24px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+
+#footerNav 
+{
+	width: 500px;
+}
+
+#copyRight 
+{
+	margin-left: auto;
+	width: 225px;
+	background-color: #DAB8C3;
+	border-color: #F24A4A;
+	border-style: solid;
+	border-top-width: 7px;
+	border-left-width: 7px;
+	border-right-width: 7px;
+	border-bottom-width: 7px;
+}
+
+#contentCon {
+	margin-top: 40px;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+
+#content1 
+{
+	width: 440px;
+}
+
+#content2 
+{
+	padding-left: 288px;
+	width: 440px;
+}
+
+#productImages 
+{
+	margin-top: 20px;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 20px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: space-between;
+}
+
+#productImages p
+{
+	line-height: 250px;
+}
+
+.productImg 
+{
+	width: 280px;
+}
+
+#contentAreaBig
+{
+	margin-top: 15px;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 15px;
+}
+
+
+
+#promoImageBig
+{
+	width: 520px;
+	padding-left: 80px;
+}
+
+#productDescLargeLeft 
+{
+	padding-top: 20px;
+	height: 200px;
+	width: 1260px;
+}
+
+#productDescLargeRight 
+{
+	width: 410px;
+}
+
